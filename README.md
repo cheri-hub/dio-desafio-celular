@@ -1,22 +1,60 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# Desafio POO - Sistema de Celulares
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+Este projeto faz parte do desafio proposto na formação .NET da Digital Innovation One (DIO), com o objetivo de aplicar os conceitos de Programação Orientada a Objetos (POO) em C#.
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+## 💡 Descrição
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+Modelamos um sistema de celulares com uma classe base abstrata (`Smartphone`) e duas classes concretas (`Nokia` e `Iphone`) que implementam comportamentos específicos, promovendo reutilização de código e polimorfismo.
 
-![Diagrama classes](Imagens/diagrama.png)
+## 📁 Estrutura
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+- `Smartphone.cs`: Classe base abstrata com propriedades e métodos comuns.
+- `Nokia.cs`: Classe concreta representando um celular da marca Nokia.
+- `Iphone.cs`: Classe concreta representando um celular da marca Apple.
+- `Program.cs`: Contém testes de instanciamento e execução dos métodos.
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## 🚀 Como executar
+
+Certifique-se de ter o [.NET SDK](https://dotnet.microsoft.com/download) instalado em sua máquina.
+
+Clone este repositório ou baixe os arquivos:
+
+```bash
+git clone https://github.com/seu-usuario/seu-repo.git
+cd dio-desafio-celular
+```
+
+Execute o projeto com:
+
+```bash
+dotnet build
+dotnet run
+```
+
+Você verá a seguinte saída simulando chamadas e instalações de aplicativos em diferentes celulares:
+
+```
+Smartphone Nokia:
+Ligando...
+Instalando o aplicativo "WhatsApp" no Nokia...
+
+Smartphone iPhone:
+Recebendo ligação...
+Instalando o aplicativo "Instagram" no iPhone...
+```
+
+## 🛠️ Tecnologias
+
+- C#
+- .NET 6 ou superior
+
+## 🧠 Conceitos aplicados
+
+- Abstração
+- Herança
+- Polimorfismo
+- Encapsulamento
+
+---
+
+Desenvolvido como parte da formação .NET da DIO.
